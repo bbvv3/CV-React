@@ -1,0 +1,99 @@
+.App-header {
+  background-color: #282934;
+  min-height: 100vh;
+  width: 100%;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.App-header .header-container {
+  padding: 2vh 5vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header .header-container .img-header-container, .App-header .header-container .text-header-container {
+  max-width: 800px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*border: solid 8px #b5b5b8;
+      border-radius: 18px;
+      box-shadow: 3px 2px 10px #000000b7*/
+}
+
+.App-header .header-container .img-header-container {
+  min-width: 30vw;
+  background: #100e33;
+  background: linear-gradient(13deg, #100e33 0%, #095579 56%, #267a8b 100%);
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px #cfcece;
+}
+
+.App-header .header-container .img-header-container img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.App-header .header-container .text-header-container {
+  min-width: 55vw;
+  text-align: right;
+  padding: 2vw;
+}
+
+.App-header .header-container .text-header-container h1 {
+  display: inline-block;
+  min-width: 100%;
+  font-size: 3.2em;
+}
+
+.App-header .header-container .text-header-container h2 {
+  display: inline-block;
+  min-width: 100%;
+  font-size: 2.6em;
+}
+
+@media screen and (max-width: 768px) {
+  .App-header .header-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .App-header .header-container .img-header-container, .App-header .header-container .text-header-container {
+    justify-content: center;
+    /*border: solid 8px #b5b5b8;
+        border-radius: 18px;
+        box-shadow: 3px 2px 10px #000000b7*/
+  }
+  .App-header .header-container .img-header-container {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  .App-header .header-container .img-header-container img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .App-header .header-container .text-header-container {
+    text-align: center;
+    height: h1;
+    height-display: inline-block;
+    height-min-width: 100%;
+    height-font-size: 3.2em;
+  }
+  .App-header .header-container .text-header-container h2 {
+    display: inline-block;
+    min-width: 100%;
+    font-size: 2.6em;
+  }
+}
